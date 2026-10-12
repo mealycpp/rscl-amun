@@ -1,0 +1,40 @@
+AMUN sequence start 2026-10-11 19:07:23   results dir /home/amun/f/seq_1011_1907
+A: RUNAWAY 1000 at random onset 33-38 s after AUTONOMY; AMUN x10, B2 ckpt=5 x10 interleaved; watchdog 3 s, cap 6 deaths
+B: LEAK 20000 KB/tick, same protocol; B0 x1 control, AMUN x5
+C: amun_e13.sh with w0=0.06, 12 min per arm, seeds 11 and 23
+
+A01-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=36.23s deaths=1 watchdog=1 oom=0 named=[TIMING:1.17] SAFE=TIMING hwerr=0
+A01-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=33.33s deaths=1 watchdog=1 oom=0 named=[TIMING:1.23] SAFE=TIMING hwerr=0
+A02-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=33.31s deaths=1 watchdog=1 oom=0 named=[TIMING:1.19] SAFE=TIMING hwerr=0
+A02-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=35.41s deaths=1 watchdog=1 oom=0 named=[TIMING:0.74] SAFE=TIMING hwerr=0
+A03-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=37.25s deaths=1 watchdog=1 oom=0 named=[TIMING:1.19] SAFE=TIMING hwerr=0
+A03-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=34.42s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,TIMING:0.54] SAFE=TIMING hwerr=0
+A04-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=36.94s deaths=1 watchdog=1 oom=0 named=[TIMING:1.19] SAFE=TIMING hwerr=0
+A04-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=33.70s deaths=1 watchdog=1 oom=0 named=[TIMING:1.21] SAFE=TIMING hwerr=0
+A05-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=33.44s deaths=1 watchdog=1 oom=0 named=[TIMING:1.20] SAFE=TIMING hwerr=0
+A05-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=37.87s deaths=1 watchdog=1 oom=0 named=[unknown:0.00] SAFE=- hwerr=0
+A06-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=37.54s deaths=1 watchdog=1 oom=0 named=[TIMING:1.17] SAFE=TIMING hwerr=0
+A06-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=34.52s deaths=1 watchdog=1 oom=0 named=[TIMING:0.75] SAFE=TIMING hwerr=0
+A07-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=35.96s deaths=1 watchdog=1 oom=0 named=[TIMING:1.18] SAFE=TIMING hwerr=0
+A07-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=36.38s deaths=1 watchdog=1 oom=0 named=[TIMING:0.74] SAFE=TIMING hwerr=0
+A08-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=33.93s deaths=1 watchdog=1 oom=0 named=[TIMING:1.23] SAFE=TIMING hwerr=0
+A08-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=36.70s deaths=1 watchdog=1 oom=0 named=[unknown:0.00] SAFE=- hwerr=0
+A09-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=34.75s deaths=1 watchdog=1 oom=0 named=[TIMING:1.16] SAFE=TIMING hwerr=0
+A09-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=34.21s deaths=2 watchdog=2 oom=0 named=[unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+A10-a grp=A-AMUN cfg="policy=AMUN" fault="RUNAWAY 1000" onset=34.74s deaths=1 watchdog=1 oom=0 named=[TIMING:1.21] SAFE=TIMING hwerr=0
+A10-b grp=A-B2ckpt5 cfg="policy=B2 ckpt=5" fault="RUNAWAY 1000" onset=33.49s deaths=1 watchdog=1 oom=0 named=[TIMING:1.19] SAFE=TIMING hwerr=0
+B00 grp=B-B0 cfg="policy=B0" fault="LEAK 20000" onset=34.13s deaths=6 CAPPED watchdog=0 oom=6 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+B01 grp=B-AMUN cfg="policy=AMUN" fault="LEAK 20000" onset=37.08s deaths=1 watchdog=0 oom=1 named=[MEMORY:1.24] SAFE=MEMORY hwerr=0
+B02 grp=B-AMUN cfg="policy=AMUN" fault="LEAK 20000" onset=35.34s deaths=1 watchdog=0 oom=1 named=[MEMORY:1.30] SAFE=MEMORY hwerr=0
+B03 grp=B-AMUN cfg="policy=AMUN" fault="LEAK 20000" onset=36.90s deaths=1 watchdog=0 oom=1 named=[MEMORY:1.24] SAFE=MEMORY hwerr=0
+B04 grp=B-AMUN cfg="policy=AMUN" fault="LEAK 20000" onset=36.74s deaths=1 watchdog=0 oom=1 named=[MEMORY:1.25] SAFE=MEMORY hwerr=0
+B05 grp=B-AMUN cfg="policy=AMUN" fault="LEAK 20000" onset=33.18s deaths=1 watchdog=0 oom=1 named=[MEMORY:1.26] SAFE=MEMORY hwerr=0
+
+=== Summary A/B
+A-AMUN: runs 10, deaths per run [1, 1, 1, 1, 1, 1, 1, 1, 1, 1], one-death runs 10/10, capped 0, cause named at first death {'TIMING': 10}, SAFE {'TIMING': 10}
+A-B2ckpt5: runs 10, deaths per run [1, 1, 3, 1, 1, 1, 1, 1, 2, 1], one-death runs 8/10, capped 0, cause named at first death {'TIMING': 6, 'unknown': 4}, SAFE {'TIMING': 7, '-': 3}
+B-B0: runs 1, deaths per run [6], one-death runs 0/1, capped 1, cause named at first death {'unknown': 1}, SAFE {'-': 1}
+B-AMUN: runs 5, deaths per run [1, 1, 1, 1, 1], one-death runs 5/5, capped 0, cause named at first death {'MEMORY': 5}, SAFE {'MEMORY': 5}
+C skipped: could not set w0=0.06 in amun_e13.sh
+
+AMUN sequence done 2026-10-11 20:12:50

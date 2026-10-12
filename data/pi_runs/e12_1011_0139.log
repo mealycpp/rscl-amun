@@ -1,0 +1,33 @@
+=== policy=AMUN
+1791708042.071123761 WATCHDOG kill pid=105224 heartbeat age 3038 ms
+Death : DEATH detected at warm start: down 5.068374 s (analog clock 5.225130 s), cause TIMING (progress 1.148445), policy AMUN
+Escalated : ESCALATE to SAFE: cause TIMING, policy AMUN, deaths in window 1
+=== policy=B0
+1791708176.673986941 WATCHDOG kill pid=107690 heartbeat age 3069 ms
+Death : DEATH detected at warm start: down 5.097233 s (analog clock 4.883220 s), cause unknown (progress 0.000000), policy B0
+1791708188.072952109 WATCHDOG kill pid=108581 heartbeat age 3146 ms
+Death : DEATH detected at warm start: down 5.174512 s (analog clock 5.036506 s), cause unknown (progress 0.000000), policy B0
+1791708199.475211153 WATCHDOG kill pid=108825 heartbeat age 3149 ms
+Death : DEATH detected at warm start: down 5.179258 s (analog clock 4.997467 s), cause unknown (progress 0.000000), policy B0
+1791708210.874904400 WATCHDOG kill pid=109069 heartbeat age 3150 ms
+Death : DEATH detected at warm start: down 5.179475 s (analog clock 5.019484 s), cause unknown (progress 0.000000), policy B0
+1791708222.275164098 WATCHDOG kill pid=109313 heartbeat age 3149 ms
+Death : DEATH detected at warm start: down 5.178471 s (analog clock 4.969640 s), cause unknown (progress 0.000000), policy B0
+1791708233.677978269 WATCHDOG kill pid=109558 heartbeat age 3152 ms
+1791708234.689227366 supervisor stop (max deaths reached)
+=== policy=B1
+1791708308.076401500 WATCHDOG kill pid=109820 heartbeat age 3011 ms
+Death : DEATH detected at warm start: down 5.040407 s (analog clock -1.000000 s), cause unknown (progress 0.000000), policy B1
+1791708316.359883028 WATCHDOG kill pid=110653 heartbeat age 3077 ms
+Death : DEATH detected at warm start: down 2.031596 s (analog clock 2.067962 s), cause unknown (progress 0.000000), policy B1
+1791708327.762034492 WATCHDOG kill pid=110837 heartbeat age 3154 ms
+Death : DEATH detected at warm start: down 5.183429 s (analog clock 5.027778 s), cause unknown (progress 0.000000), policy B1
+Escalated : ESCALATE to SAFE: cause ALL, policy B1, deaths in window 3
+=== policy=B2 ckpt=1
+1791708442.638478768 WATCHDOG kill pid=112332 heartbeat age 3013 ms
+Death : DEATH detected at warm start: down 5.043518 s (analog clock -1.000000 s), cause TIMING (progress 0.736221), policy B2
+Escalated : ESCALATE to SAFE: cause TIMING, policy B2, deaths in window 1
+=== policy=B2 ckpt=5
+1791708580.251601261 WATCHDOG kill pid=114794 heartbeat age 3079 ms
+Death : DEATH detected at warm start: down 5.108949 s (analog clock 5.321781 s), cause TIMING (progress 1.162866), policy B2
+Escalated : ESCALATE to SAFE: cause TIMING, policy B2, deaths in window 1

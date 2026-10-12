@@ -1,0 +1,26 @@
+E8c processor-reboot test, 2026-10-11 (Pi local time), pasted from the Pi terminal.
+
+Before reboot (BOOT, MONITOR false, CHARGE 15):
+2026-10-11T18:44:02.827848,(2(0)-1791769442:827848),Amun.neuro.Charged,268525579,EventSeverity.ACTIVITY_HI,All neurons charged with +1 for 15 ms (checkpoint written)
+23: ip    pd | hi // GPIO23 = input        (CFGFLG_B)
+24: ip    pd | hi // GPIO24 = input        (ACTIVATE)
+25: ip    pd | hi // GPIO25 = input        (ERR_B)
+26: op -- pd | hi // GPIO26 = output       (RESET_B)
+sync && sudo reboot
+
+After reboot, before GDS/F' start:
+23: ip    pd | hi // GPIO23 = input
+24: ip    pd | lo // GPIO24 = input        ACTIVATE low -> chips not configured
+25: ip    pd | lo // GPIO25 = input
+26: ip    pd | lo // GPIO26 = input        RESET_B low
+
+After GDS start, e8_after_nw (REATTACH with zero writes, READOUT); downtime 100.6 s:
+2026-10-11T18:45:45.178186,(2(0)-1791769545:178186),Amun.neuro.Reattached,268525583,EventSeverity.ACTIVITY_HI,Reattached without reset: polarity 0x0, 102.350700s since charge, HOLD rewritten = False, above threshold 0xf
+2026-10-11T18:45:46.705437,(2(0)-1791769546:705437),Amun.neuro.ReadoutNoCross,268525582,EventSeverity.WARNING_HI,Readout neuron 1: no crossing
+2026-10-11T18:45:46.705545,(2(0)-1791769546:705545),Amun.neuro.ReadoutNoCross,268525582,EventSeverity.WARNING_HI,Readout neuron 2: no crossing
+2026-10-11T18:45:46.705569,(2(0)-1791769546:705569),Amun.neuro.ReadoutNoCross,268525582,EventSeverity.WARNING_HI,Readout neuron 3: no crossing
+2026-10-11T18:45:46.705591,(2(0)-1791769546:705591),Amun.neuro.ReadoutNoCross,268525582,EventSeverity.WARNING_HI,Readout neuron 4: no crossing
+Pins after reattach: GPIO23 lo, GPIO24 lo (still unconfigured), GPIO25 hi, GPIO26 output hi (reset released).
+
+Control: without a reboot, n1 holds its charge for over 116 s (E8 fifth run, n1 = 20.47 units at 116.5 s).
+Earlier run at 18:42 is NOT used: its pre-reboot CHARGE did not run (Reattached reported 22078 s since the 12:34 charge).

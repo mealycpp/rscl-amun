@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.bak
+build-fprime-automatic-*/
+.DS_Store
+Thumbs.db

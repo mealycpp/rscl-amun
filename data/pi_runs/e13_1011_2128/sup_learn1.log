@@ -1,0 +1,466 @@
+1791779311.010684362 start pid=104022
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1791779311,15752) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+
+[NOTE] Task Permissions:
+[NOTE]
+[NOTE] You have insufficient permissions to create a task with priority and/or cpu affinity.
+[NOTE] A task without priority and affinity will be created.
+[NOTE]
+[NOTE] There are three possible resolutions:
+[NOTE] 1. Use tasks without priority and affinity using parameterless start()
+[NOTE] 2. Run this executable as a user with task priority permission
+[NOTE] 3. Grant capability with "setcap 'cap_sys_nice=eip'" or equivalent
+
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+EVENT: (16789504) (2:1791779311,17127) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.4.1]
+EVENT: (16789505) (2:1791779311,17160) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [v4.3.0]
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+Connected to 127.0.0.1:50000 as a tcp client
+EVENT: (33591296) (2:1791779312,510986) WARNING_LO: (ComCcsds.apidManager) UnexpectedSequenceCount : Unexpected sequence count received. Packets may have been dropped. Transmitted: 132 | Expected on board: 0
+EVENT: (16777217) (2:1791779312,511145) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016000 dispatched to port 2
+EVENT: (268525585) (2:1791779316,298862) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 4 hold drift 3.034351 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525585) (2:1791779316,302355) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 2 hold drift 1.859515 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525585) (2:1791779316,304935) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 3 hold drift 1.004256 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525585) (2:1791779316,307933) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 1 hold drift -0.005593 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525568) (2:1791779316,499703) ACTIVITY_HI: (Amun.neuro) Booted : Neurons booted: polarity mask 0x0, 164 frames, all neurons zeroed and biased
+EVENT: (16777218) (2:1791779316,499899) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016000 completed
+EVENT: (16777217) (2:1791779323,746412) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016016 dispatched to port 2
+EVENT: (268525597) (2:1791779323,746755) ACTIVITY_HI: (Amun.neuro) Assigned : Monitors assigned by retention: TIMING->n1 MEMORY->n3 GPS-LINK->n2 CLOCK->n4
+EVENT: (268525572) (2:1791779323,746854) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 1 weights: Cf=250 C_V2=15 C_V1=15
+EVENT: (268525572) (2:1791779323,746889) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 3 weights: Cf=250 C_V2=15 C_V1=15
+EVENT: (268525572) (2:1791779323,746921) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 2 weights: Cf=250 C_V2=25 C_V1=25
+EVENT: (268525605) (2:1791779323,808941) ACTIVITY_HI: (Amun.neuro) WarmStart : Warm start: policy AMUN, SAFE = 0, persisted faults loaded 0
+EVENT: (16777218) (2:1791779323,809120) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016016 completed
+EVENT: (268525606) (2:1791779335,123680) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -17.991133 -> analog -22.504560
+EVENT: (268525606) (2:1791779346,122313) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.001902 -> analog -22.608568
+EVENT: (268525598) (2:1791779353,19760) ACTIVITY_HI: (Amun.neuro) Baseline : Baseline TIMING: offset 0.000000 scale 1500.000000
+EVENT: (268525598) (2:1791779353,19865) ACTIVITY_HI: (Amun.neuro) Baseline : Baseline MEMORY: offset 6.008764 scale 6553.600098
+EVENT: (268525598) (2:1791779353,19893) ACTIVITY_HI: (Amun.neuro) Baseline : Baseline GPS-LINK: offset 1.285473 scale 3.000000
+EVENT: (268525606) (2:1791779356,124295) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -17.993217 -> analog -22.297995
+EVENT: (268525606) (2:1791779366,122817) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.013142 -> analog -21.959476
+EVENT: (268525606) (2:1791779377,122116) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.002012 -> analog -22.462816
+EVENT: (268525606) (2:1791779387,123979) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -17.990330 -> analog -22.314283
+EVENT: (268525607) (2:1791779393,940020) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK LEAK 12288
+EVENT: (16777217) (2:1791779393,940000) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779393,940132) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791779398,83765) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 1.000000 membrane 0.977939
+EVENT: (268525606) (2:1791779398,151814) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.011330 -> analog -22.676302
+EVENT: (268525608) (2:1791779399,32971) WARNING_HI: (Amun.neuro) OomKill : Memory limit reached (79600 KB): process killed (simulated OOM)
+/home/amun/amun/fprime/neuro_pkg/amun_supervisor.sh: line 29: 104022 Killed                  ( cd "$(dirname "$APP")" && exec "$APP" -a 127.0.0.1 -p 50000 )
+1791779399.131290157 exit pid=104022 rc=137 deaths=1
+1791779400.140015572 start pid=105604
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1791779400,145772) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+
+[NOTE] Task Permissions:
+[NOTE]
+[NOTE] You have insufficient permissions to create a task with priority and/or cpu affinity.
+[NOTE] A task without priority and affinity will be created.
+[NOTE]
+[NOTE] There are three possible resolutions:
+[NOTE] 1. Use tasks without priority and affinity using parameterless start()
+[NOTE] 2. Run this executable as a user with task priority permission
+[NOTE] 3. Grant capability with "setcap 'cap_sys_nice=eip'" or equivalent
+
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+EVENT: (16789504) (2:1791779400,147194) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.4.1]
+EVENT: (16789505) (2:1791779400,147228) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [v4.3.0]
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+Connected to 127.0.0.1:50000 as a tcp client
+EVENT: (268525587) (2:1791779401,182513) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 1: src=ANALOG (0) analog raw=-19.285818 corrected=-19.302588 checkpoint=0.000000 age=-18.000000s down=2.998198s applied=-18.000000 rail=0
+EVENT: (268525587) (2:1791779401,182624) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 2: src=ANALOG (0) analog raw=-24.105335 corrected=-18.530142 checkpoint=0.000000 age=-18.000000s down=2.998198s applied=-18.000000 rail=0
+EVENT: (268525587) (2:1791779401,182648) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 3: src=ANALOG (0) analog raw=1.423523 corrected=4.434481 checkpoint=0.000000 age=-18.000000s down=2.998198s applied=4.434481 rail=0
+EVENT: (268525587) (2:1791779401,182668) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 4: src=ANALOG (0) analog raw=8.747192 corrected=17.844776 checkpoint=0.000000 age=-18.000000s down=2.998198s applied=18.000000 rail=0
+EVENT: (268525603) (2:1791779401,212939) WARNING_HI: (Amun.neuro) Death : DEATH detected at warm start: down 2.998198 s (analog clock 3.049353 s), cause MEMORY (progress 1.246360), policy AMUN
+EVENT: (268525572) (2:1791779401,213040) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 3 weights: Cf=232 C_V2=16 C_V1=16
+EVENT: (268525602) (2:1791779401,213308) ACTIVITY_HI: (Amun.neuro) Learned : LEARN MEMORY (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+EVENT: (268525604) (2:1791779401,213422) WARNING_HI: (Amun.neuro) Escalated : ESCALATE to SAFE: cause MEMORY, policy AMUN, deaths in window 1
+EVENT: (268525605) (2:1791779401,213454) ACTIVITY_HI: (Amun.neuro) WarmStart : Warm start: policy AMUN, SAFE = 1, persisted faults loaded 0
+EVENT: (268525606) (2:1791779412,254567) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.012865 -> analog -22.612183
+EVENT: (268525606) (2:1791779422,253955) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.013470 -> analog -22.439960
+EVENT: (33591296) (2:1791779428,574405) WARNING_LO: (ComCcsds.apidManager) UnexpectedSequenceCount : Unexpected sequence count received. Packets may have been dropped. Transmitted: 135 | Expected on board: 0
+EVENT: (16777217) (2:1791779428,574592) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779428,574636) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777218) (2:1791779428,574682) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779432,999365) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -11.253349 -> analog -15.775767
+EVENT: (268525606) (2:1791779443,252304) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.002754 -> analog -22.535225
+EVENT: (268525606) (2:1791779453,253577) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -17.995764 -> analog -22.517105
+EVENT: (16777217) (2:1791779454,359549) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779454,359571) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777218) (2:1791779454,359804) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779464,253975) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.012669 -> analog -22.947859
+EVENT: (268525606) (2:1791779475,253278) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.003073 -> analog -23.148500
+EVENT: (268525607) (2:1791779477,529029) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777217) (2:1791779477,529011) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779477,529156) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779485,252488) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -18.002489 -> analog -22.607769
+EVENT: (268525606) (2:1791779495,253772) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -17.990999 -> analog -22.429928
+EVENT: (268525607) (2:1791779498,917867) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1791779498,917848) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779498,918018) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779504,808013) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -20.316275 -> analog -25.021496
+EVENT: (268525606) (2:1791779510,382027) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.047642 -> analog -0.510363
+1791779513.459265847 WATCHDOG kill pid=105604 heartbeat age 3073 ms
+1791779513.465205357 exit pid=105604 rc=137 deaths=2
+1791779514.474727893 start pid=107833
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1791779514,480465) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+
+[NOTE] Task Permissions:
+[NOTE]
+[NOTE] You have insufficient permissions to create a task with priority and/or cpu affinity.
+[NOTE] A task without priority and affinity will be created.
+[NOTE]
+[NOTE] There are three possible resolutions:
+[NOTE] 1. Use tasks without priority and affinity using parameterless start()
+[NOTE] 2. Run this executable as a user with task priority permission
+[NOTE] 3. Grant capability with "setcap 'cap_sys_nice=eip'" or equivalent
+
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+EVENT: (16789504) (2:1791779514,482230) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.4.1]
+EVENT: (16789505) (2:1791779514,482276) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [v4.3.0]
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+Connected to 127.0.0.1:50000 as a tcp client
+EVENT: (268525587) (2:1791779515,521683) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 1: src=ANALOG (0) analog raw=-2.513691 corrected=-2.542238 checkpoint=0.000000 age=-18.000000s down=5.103886s applied=-2.542238 rail=0
+EVENT: (268525587) (2:1791779515,521796) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 2: src=ANALOG (0) analog raw=-31.124004 corrected=-21.633253 checkpoint=0.000000 age=-18.000000s down=5.103886s applied=-18.000000 rail=0
+EVENT: (268525587) (2:1791779515,521819) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 3: src=ANALOG (0) analog raw=-24.452696 corrected=-19.327087 checkpoint=0.000000 age=-16.000000s down=5.103886s applied=-16.000000 rail=0
+EVENT: (268525587) (2:1791779515,521840) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 4: src=ANALOG (0) analog raw=2.993440 corrected=18.480421 checkpoint=0.000000 age=-18.000000s down=5.103886s applied=18.000000 rail=0
+EVENT: (268525603) (2:1791779515,552015) WARNING_HI: (Amun.neuro) Death : DEATH detected at warm start: down 5.103886 s (analog clock 4.945558 s), cause TIMING (progress 0.858765), policy AMUN
+EVENT: (268525572) (2:1791779515,552114) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 1 weights: Cf=232 C_V2=16 C_V1=16
+EVENT: (268525602) (2:1791779515,552410) ACTIVITY_HI: (Amun.neuro) Learned : LEARN TIMING (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+EVENT: (268525605) (2:1791779515,552481) ACTIVITY_HI: (Amun.neuro) WarmStart : Warm start: policy AMUN, SAFE = 1, persisted faults loaded 0
+EVENT: (268525606) (2:1791779526,572497) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.002657 -> analog -19.832172
+EVENT: (33591296) (2:1791779533,623505) WARNING_LO: (ComCcsds.apidManager) UnexpectedSequenceCount : Unexpected sequence count received. Packets may have been dropped. Transmitted: 139 | Expected on board: 0
+EVENT: (16777217) (2:1791779533,623668) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779533,623687) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777218) (2:1791779533,623747) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779538,219385) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -2.739193 -> analog -6.702328
+EVENT: (268525606) (2:1791779557,571998) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.005899 -> analog -19.447527
+EVENT: (268525607) (2:1791779562,285102) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1791779562,285082) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779562,285336) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779567,573182) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.999331 -> analog -19.294668
+EVENT: (268525606) (2:1791779575,550064) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000162 -> analog -14.701536
+EVENT: (268525606) (2:1791779578,574628) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.979679 -> analog -20.119314
+EVENT: (268525606) (2:1791779589,572352) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.006216 -> analog -19.747446
+EVENT: (16777217) (2:1791779594,485499) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779594,485710) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 600
+EVENT: (16777218) (2:1791779594,488523) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779599,573197) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.012884 -> analog -19.348028
+EVENT: (268525606) (2:1791779611,572908) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.002352 -> analog -20.122292
+EVENT: (16777217) (2:1791779618,758926) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779618,758948) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777218) (2:1791779618,759505) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779622,572997) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -11.568489 -> analog -15.062382
+EVENT: (268525606) (2:1791779631,573193) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.990770 -> analog -19.049271
+EVENT: (268525606) (2:1791779642,572241) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.005901 -> analog -19.582483
+EVENT: (268525607) (2:1791779649,808685) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1791779649,808666) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779649,808814) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779654,88572) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -4.950595 -> analog -9.033691
+EVENT: (268525599) (2:1791779658,663835) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 2.026525
+EVENT: (268525600) (2:1791779661,749285) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.002197 ms, growth 4.000000 KB/tick)
+EVENT: (268525606) (2:1791779665,572023) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.999560 -> analog -19.498716
+EVENT: (268525606) (2:1791779668,559118) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -16.000029 -> analog -12.706367
+EVENT: (268525601) (2:1791779672,522492) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1791779672,522579) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1791779676,573336) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.999689 -> analog -19.666702
+EVENT: (268525607) (2:1791779685,577567) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777217) (2:1791779685,577547) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779685,577680) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779688,461814) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -9.367100 -> analog -13.213118
+EVENT: (268525606) (2:1791779707,572628) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.991825 -> analog -19.020958
+EVENT: (268525606) (2:1791779718,573344) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.010174 -> analog -19.376560
+EVENT: (16777217) (2:1791779721,322327) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779721,322350) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777218) (2:1791779721,322482) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779749,573650) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.004217 -> analog -19.452965
+EVENT: (268525607) (2:1791779751,105859) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 4096
+EVENT: (16777217) (2:1791779751,105841) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779751,105969) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779760,571796) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.005926 -> analog -19.331139
+EVENT: (268525606) (2:1791779781,571962) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.005951 -> analog -19.459030
+EVENT: (268525607) (2:1791779783,120702) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1791779783,120684) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779783,120841) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791779791,687953) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 6.114438
+EVENT: (268525606) (2:1791779791,731971) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -20.961889 -> analog -25.873829
+EVENT: (268525600) (2:1791779794,767353) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1791779794,820375) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.145864 -> analog 2.944962
+EVENT: (268525606) (2:1791779802,545491) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000252 -> analog -12.421165
+EVENT: (268525601) (2:1791779805,522502) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1791779805,522600) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1791779805,618381) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.990414 -> analog -19.463100
+EVENT: (16777217) (2:1791779811,19145) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779811,19168) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777218) (2:1791779811,19290) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791779819,678265) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 6.116995
+EVENT: (268525606) (2:1791779819,685524) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.116995 -> analog 2.458130
+EVENT: (268525600) (2:1791779822,721071) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.001953 ms, growth 4.000000 KB/tick)
+EVENT: (268525606) (2:1791779829,571747) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.002350 -> analog -19.195583
+EVENT: (268525601) (2:1791779833,522642) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1791779833,522727) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (16777217) (2:1791779834,943849) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779834,943872) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777218) (2:1791779834,944084) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779840,572098) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.001850 -> analog -19.417519
+EVENT: (268525606) (2:1791779850,572754) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.984509 -> analog -19.091801
+EVENT: (268525606) (2:1791779861,572178) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.006023 -> analog -19.456104
+EVENT: (268525607) (2:1791779866,229660) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1791779866,229641) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779866,229773) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791779874,681472) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 6.117011
+EVENT: (268525606) (2:1791779874,689436) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.117011 -> analog 2.696408
+EVENT: (268525600) (2:1791779877,725057) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.002197 ms, growth 4.000000 KB/tick)
+EVENT: (268525606) (2:1791779884,571823) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.006563 -> analog -19.329155
+EVENT: (268525601) (2:1791779888,522674) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1791779888,522771) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1791779894,573132) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.008871 -> analog -19.015333
+EVENT: (268525607) (2:1791779896,146515) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777217) (2:1791779896,146491) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779896,146621) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779905,572897) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.012884 -> analog -19.094017
+EVENT: (268525606) (2:1791779916,572188) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.006056 -> analog -19.582470
+EVENT: (268525607) (2:1791779917,963718) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1791779917,963698) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779917,963838) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791779927,572120) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.993000 -> analog -19.496731
+EVENT: (268525606) (2:1791779937,573903) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.999784 -> analog -19.466957
+EVENT: (16777217) (2:1791779943,417768) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779943,417789) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777218) (2:1791779943,417910) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791779951,675415) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 6.116673
+EVENT: (268525606) (2:1791779951,681649) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.116673 -> analog 2.099150
+EVENT: (268525600) (2:1791779954,717115) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.002197 ms, growth 4.000000 KB/tick)
+EVENT: (268525606) (2:1791779961,573016) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.991979 -> analog -19.214121
+EVENT: (268525601) (2:1791779965,522541) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1791779965,522664) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (16777217) (2:1791779966,236064) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791779966,236085) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK LEAK 12288
+EVENT: (16777218) (2:1791779966,236298) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791779969,540087) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 1.000000 membrane 2.799795
+EVENT: (268525600) (2:1791779970,549378) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.582740 ms, growth 12296.000000 KB/tick)
+EVENT: (268525606) (2:1791779972,579142) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.993342 -> analog -19.002840
+EVENT: (268525601) (2:1791779982,554425) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525607) (2:1791779982,554606) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated MEMORY 0
+EVENT: (268525606) (2:1791779983,575620) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.006828 -> analog -19.448170
+EVENT: (268525606) (2:1791779994,572974) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.000227 -> analog -19.264294
+EVENT: (268525607) (2:1791779995,554228) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK LEAK 12288
+EVENT: (16777217) (2:1791779995,554211) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791779995,554316) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791780000,559114) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 1.000000 membrane 2.565717
+EVENT: (268525608) (2:1791780001,498689) WARNING_HI: (Amun.neuro) OomKill : Memory limit reached (79692 KB): process killed (simulated OOM)
+/home/amun/amun/fprime/neuro_pkg/amun_supervisor.sh: line 29: 107833 Killed                  ( cd "$(dirname "$APP")" && exec "$APP" -a 127.0.0.1 -p 50000 )
+1791780001.555692976 exit pid=107833 rc=137 deaths=3
+1791780002.564261860 start pid=117236
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1791780002,582552) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+
+[NOTE] Task Permissions:
+[NOTE]
+[NOTE] You have insufficient permissions to create a task with priority and/or cpu affinity.
+[NOTE] A task without priority and affinity will be created.
+[NOTE]
+[NOTE] There are three possible resolutions:
+[NOTE] 1. Use tasks without priority and affinity using parameterless start()
+[NOTE] 2. Run this executable as a user with task priority permission
+[NOTE] 3. Grant capability with "setcap 'cap_sys_nice=eip'" or equivalent
+
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+EVENT: (16789504) (2:1791780002,584977) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.4.1]
+EVENT: (16789505) (2:1791780002,585018) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [v4.3.0]
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+Connected to 127.0.0.1:50000 as a tcp client
+EVENT: (268525587) (2:1791780003,617190) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 1: src=ANALOG (0) analog raw=-19.091425 corrected=-19.108370 checkpoint=0.000000 age=-16.000000s down=3.029742s applied=-16.000000 rail=0
+EVENT: (268525587) (2:1791780003,617311) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 2: src=ANALOG (0) analog raw=-23.523380 corrected=-17.889530 checkpoint=0.000000 age=-18.000000s down=3.029742s applied=-17.889530 rail=0
+EVENT: (268525587) (2:1791780003,617335) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 3: src=ANALOG (0) analog raw=1.156601 corrected=4.199238 checkpoint=0.000000 age=-16.000000s down=3.029742s applied=4.199238 rail=0
+EVENT: (268525587) (2:1791780003,617354) ACTIVITY_HI: (Amun.neuro) Recovered : Recover neuron 4: src=ANALOG (0) analog raw=8.892814 corrected=18.086117 checkpoint=0.000000 age=-18.000000s down=3.029742s applied=18.000000 rail=0
+EVENT: (268525603) (2:1791780003,640732) WARNING_HI: (Amun.neuro) Death : DEATH detected at warm start: down 3.029742 s (analog clock 3.001362 s), cause MEMORY (progress 1.262452), policy AMUN
+EVENT: (268525572) (2:1791780003,640814) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 3 weights: Cf=252 C_V2=20 C_V1=20
+EVENT: (268525602) (2:1791780003,641116) ACTIVITY_HI: (Amun.neuro) Learned : LEARN MEMORY (death): gain 0.069000 -> 0.079350, floor -16.000000 -> -14.000000
+EVENT: (268525605) (2:1791780003,641193) ACTIVITY_HI: (Amun.neuro) WarmStart : Warm start: policy AMUN, SAFE = 1, persisted faults loaded 0
+EVENT: (268525606) (2:1791780014,679341) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.990977 -> analog -19.478743
+EVENT: (33591296) (2:1791780023,560213) WARNING_LO: (ComCcsds.apidManager) UnexpectedSequenceCount : Unexpected sequence count received. Packets may have been dropped. Transmitted: 156 | Expected on board: 0
+EVENT: (16777217) (2:1791780023,560365) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1791780023,560385) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 600
+EVENT: (16777218) (2:1791780023,560624) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791780026,263375) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -9.358896 -> analog -13.169652
+EVENT: (268525606) (2:1791780035,675518) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.991706 -> analog -19.103727
+EVENT: (268525607) (2:1791780046,357364) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 6144
+EVENT: (16777217) (2:1791780046,357344) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791780046,357470) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1791780046,690037) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.005884 -> analog -19.837948
+EVENT: (268525599) (2:1791780048,645348) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 0.937193 membrane 0.836906
+EVENT: (268525606) (2:1791780056,676584) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.000328 -> analog -19.469194
+EVENT: (268525606) (2:1791780067,675402) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.005924 -> analog -19.540287
+EVENT: (268525607) (2:1791780071,162508) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1791780071,162489) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791780071,162610) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791780079,781176) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 6.116612
+EVENT: (268525606) (2:1791780079,789623) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.116612 -> analog 2.868572
+EVENT: (268525600) (2:1791780082,825052) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1791780089,675291) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.001379 -> analog -19.245684
+EVENT: (268525601) (2:1791780093,625901) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1791780093,626048) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1791780101,675597) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -16.006615 -> analog -19.708389
+EVENT: (268525607) (2:1791780106,127774) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1791780106,127756) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1791780106,127866) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1791780114,784059) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 6.117266
+EVENT: (268525606) (2:1791780114,792225) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 6.117266 -> analog 2.765570
+EVENT: (268525600) (2:1791780117,827676) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 3000.002197 ms, growth 0.000000 KB/tick)
+[WARNING] ReceiveTask failed to recv from port with status -8 and errno 0
+Exiting...

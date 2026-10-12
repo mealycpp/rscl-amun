@@ -1,0 +1,83 @@
+AMUN sequence, part C: learning from F' behavior with TIMING/MEMORY gains mis-tuned to w0=0.06
+Seeds 11 and 23 fixed in amun_seq.sh before any run. 12 min per arm, learning ON then OFF, same seed.
+Script: /home/amun/f/seq_1011_1907/e13_w006.sh (amun_e13.sh with w0=0.06). Pi output file: /home/amun/f/seq_1011_1907/RESULTS_C.txt
+Transcribed from the Pi terminal on 2026-10-11 (summaries verbatim; grep lines cut at 170 characters by the command).
+
+=== C seed 11 (w0=0.06)
+=== learn=1  start 21:02:15  (12 min, seed 11)
+=== learn=0  start 21:15:46  (12 min, seed 11)
+
+=== learning ON: deaths 3 (OOM 2), sheds 10 (justified 10, false 0), learning updates 3, stress events 25
+    Learned : LEARN TIMING (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+    Learned : LEARN MEMORY (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+    Learned : LEARN MEMORY (death): gain 0.069000 -> 0.079350, floor -16.000000 -> -14.000000
+    window 1/3: deaths 2, false sheds 0, justified sheds 4
+    window 2/3: deaths 0, false sheds 0, justified sheds 3
+    window 3/3: deaths 1, false sheds 0, justified sheds 3
+
+=== learning OFF: deaths 12 (OOM 2), sheds 1 (justified 1, false 0), learning updates 0, stress events 25
+    window 1/3: deaths 6, false sheds 0, justified sheds 0
+    window 2/3: deaths 3, false sheds 0, justified sheds 0
+    window 3/3: deaths 3, false sheds 0, justified sheds 1
+E13 logs in /home/amun/f/e13_1011_2101
+
+=== C seed 23 (w0=0.06)
+=== learn=1  start 21:29:18  (12 min, seed 23)
+=== learn=0  start 21:42:50  (12 min, seed 23)
+
+=== learning ON: deaths 3 (OOM 2), sheds 8 (justified 7, false 0), learning updates 3, stress events 26
+    Learned : LEARN MEMORY (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+    Learned : LEARN TIMING (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+    Learned : LEARN MEMORY (death): gain 0.069000 -> 0.079350, floor -16.000000 -> -14.000000
+    window 1/3: deaths 2, false sheds 0, justified sheds 0
+    window 2/3: deaths 0, false sheds 0, justified sheds 3
+    window 3/3: deaths 1, false sheds 0, justified sheds 4
+
+=== learning OFF: deaths 9 (OOM 2), sheds 1 (justified 1, false 0), learning updates 0, stress events 26
+    window 1/3: deaths 2, false sheds 0, justified sheds 0
+    window 2/3: deaths 3, false sheds 0, justified sheds 0
+    window 3/3: deaths 4, false sheds 0, justified sheds 1
+E13 logs in /home/amun/f/e13_1011_2128
+
+
+--- Verification: death -> cause -> update order, learning ON ---
+
+seed 11:  grep -nE "WATCHDOG kill|OomKill|Memory limit|DEATH detected|LEARN " /home/amun/f/e13_1011_2101/sup_learn1.log | cut -c1-170
+89:1791777778.257493117 WATCHDOG kill pid=72678 heartbeat age 3009 ms
+152:... DEATH detected at warm start: down 5.040538 s (analog clock 5.169554 s), cause TIMING
+154:... LEARN TIMING (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+224:... OomKill : Memory limit reached (79552 KB): process killed (simulated OOM)
+288:... DEATH detected at warm start: down 3.039566 s (analog clock 3.133637 s), cause MEMORY
+290:... LEARN MEMORY (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+398:... OomKill : Memory limit reached (79664 KB): process killed (simulated OOM)
+461:... DEATH detected at warm start: down 3.006421 s (analog clock 3.209241 s), cause MEMORY
+463:... LEARN MEMORY (death): gain 0.069000 -> 0.079350, floor -16.000000 -> -14.000000
+Result: watchdog death -> TIMING -> TIMING update; OOM -> MEMORY -> MEMORY update (x2). 3/3 right class.
+
+seed 23:  grep -nE "WATCHDOG kill|OomKill|DEATH detected|LEARN | SHED |shed justified" /home/amun/f/e13_1011_2128/sup_learn1.log | cut -c1-170
+87:  (2:1791779399,32971)  OomKill : Memory limit reached (79600 KB)
+151: (2:1791779401,212939) DEATH detected at warm start: down 2.998198 s (analog clock 3.049353 s), cause MEMORY
+153: (2:1791779401,213308) LEARN MEMORY (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+180: 1791779513.459265847 WATCHDOG kill pid=105604 heartbeat age 3073 ms
+243: (2:1791779515,552015) DEATH detected at warm start: down 5.103886 s (analog clock 4.945558 s), cause TIMING
+245: (2:1791779515,552410) LEARN TIMING (death): gain 0.060000 -> 0.069000, floor -18.000000 -> -16.000000
+277: (2:1791779661,749285) SHED TIMING            280: (2:1791779672,522492) PROBE TIMING: shed justified = 1
+303: (2:1791779794,767353) SHED TIMING            306: (2:1791779805,522502) PROBE TIMING: shed justified = 1
+314: (2:1791779822,721071) SHED TIMING            316: (2:1791779833,522642) PROBE TIMING: shed justified = 1
+329: (2:1791779877,725057) SHED TIMING            331: (2:1791779888,522674) PROBE TIMING: shed justified = 1
+349: (2:1791779954,717115) SHED TIMING            351: (2:1791779965,522541) PROBE TIMING: shed justified = 1
+357: (2:1791779970,549378) SHED MEMORY            359: (2:1791779982,554425) PROBE MEMORY: shed justified = 1
+367: (2:1791780001,498689) OomKill : Memory limit reached (79692 KB)
+431: (2:1791780003,640732) DEATH detected at warm start: down 3.029742 s (analog clock 3.001362 s), cause MEMORY
+433: (2:1791780003,641116) LEARN MEMORY (death): gain 0.069000 -> 0.079350, floor -16.000000 -> -14.000000
+454: (2:1791780082,825052) SHED TIMING            456: (2:1791780093,625901) PROBE TIMING: shed justified = 1
+464: (2:1791780117,827676) SHED TIMING            (no probe line follows: last line of the log match)
+Result: OOM -> MEMORY -> MEMORY update; watchdog death -> TIMING -> TIMING update; OOM -> MEMORY -> MEMORY update. 3/3 right class.
+Unlabeled shed (8 sheds, 7 justified, 0 false): the shed at 21:41:57 PT is the last line the grep matches, so no probe line follows it; its probe (about 11 s later)
+did not complete before the learning-ON arm was stopped (the learning-OFF arm logged its start at 21:42:50 after a 35 s baseline).
+It is neither justified nor false.
+
+Analog clock vs heartbeat downtime at these six restarts: differences 0.13, 0.09, 0.20, 0.05, 0.16, 0.03 s.
+
+Combined with the paper's original mis-tuned schedule (8 deaths OFF, 3 ON, 3 updates of the right class):
+deaths OFF 8, 12, 9; deaths ON 3, 3, 3; false sheds 0 in every run; 9 of 9 updates follow a death and name the right class.

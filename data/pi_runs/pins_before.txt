@@ -1,0 +1,3 @@
+24: ip    pn | hi // GPIO24 = input
+25: ip    pn | hi // GPIO25 = input
+26: op -- pn | hi // GPIO26 = output
