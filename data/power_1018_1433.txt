@@ -1,0 +1,40 @@
+AMUN board power, 2026-10-18, FNIRSI FNB48P (USB 2e3c:0049) in line at the Pi's USB-C input, logged at 100 samples/s
+by baryluk fnirsi_logger.py (commit 746e4d3, md5 2050ed1d0bd1d3b950a5b5c21f671b11), cut by amun_power_cut.py (md5 1a22b798...).
+Script amun_power.sh md5 0e50945483fcdd035f8305251855c006, cold boot 14:32:02, results dir /home/amun/f/power_1018_1433. Verbatim console:
+
+=== AMUN power, amun, boot 2026-10-18 14:32:02, results dir /home/amun/f/power_1018_1433
+meter logging: 456 samples in 5 s
+1792359233.231 2026-10-18 14:33:53 S1 start (chips unconfigured, F' off)
+1792359353.243 2026-10-18 14:35:53 S1 end
+1792359411.495 2026-10-18 14:36:51 S2 start (chips configured, F' running AMUN)
+1792359531.501 2026-10-18 14:38:51 S2 end
+F' pid 1393 CPU during S2: 4.8% of one core
+deaths during S2: 0
+1792359538.085 2026-10-18 14:38:58 S3 start (chips configured, F' off)
+1792359658.091 2026-10-18 14:40:58 S3 end
+throttled: throttled=0x0   (0x0 = no under-voltage)
+meter samples 45164; states trimmed 10 s at start, 5 s at end
+S1: n=10502  V=4.9714 V (min 4.9678)  I=480.7 mA  P=2389.8 mW  1 s means: sd 66.0 mW, range 2342.5..2712.5
+S2: n=10501  V=4.9671 V (min 4.9631)  I=703.0 mA  P=3491.8 mW  1 s means: sd 172.8 mW, range 3220.8..3902.6
+S3: n=10501  V=4.9649 V (min 4.9634)  I=807.8 mA  P=4010.5 mW  1 s means: sd 13.6 mW, range 3957.2..4029.2
+S3 - S1 = +1620.6 mW   (four configured FPAAs)            <- INVALID, see below
+S2 - S3 = -518.7 mW
+S2 - S1 = +1102.0 mW
+
+S3 is invalid as an FPAA measurement: the 1 s trace (p1s.txt) shows a step of about +0.4 W within 1 s of the F' kill (t=179->180 s after S1 end),
+and top shows the ground-software comm adapter (pid 1350, python3 -m fprime_gds.executables.comm --communication-selection ip ...)
+at 100 % CPU from the moment F' disconnected (CPU time 7:08 at 14:46, 9:05 at 14:48). pkill (SIGTERM) did not stop it.
+
+Diagnostic 1 (14:46-14:48, chips configured, F' off): A spinning 4016.5 mW; after pkill -f fprime.gds (comm adapter survived) 4019.9; after GDS restart 4104.3.
+Diagnostic 2 (14:49-14:50): A spinning process alive 4017.5 mW (sd 6.0, 4004..4031); B after kill -9 1350, new GDS idle, F' off: 2727.3 mW (sd 18.6, 2694..2784), n=3001.
+
+Clean states (same software: idle GDS, logger, F' off; only the FPAA configuration differs):
+  S1 chips unconfigured (cold boot)  2389.8 mW
+  B  chips configured (F' off)       2727.3 mW   -> four configured FPAAs add 337.5 mW (0.34 W)
+  S2 F' running AMUN + GDS receiving telemetry, same processor: 3491.8 mW
+F' process CPU during S2: 4.8 % of one core.
+
+SPI traffic (GDS session fprime-gds-2026_10_18-14_33_32, channel.log, Amun.neuro.FramesSent):
+  boot 106 frames at 14:35:58.99; steady state 1753 (14:38:31.39) -> 1967 (14:38:50.42): 214 frames in 19 ticks = 11.3 frames/tick
+  increments +10 per tick, +14 on audit ticks (every 3-4 ticks). Input frame on the wire = 9 bytes (D5 chip 80 addr bank 01 data 2A 00), gain frame 11 bytes.
+  -> about 100 bytes per tick (11.3 x 9 = 102), 32 MHz bus.

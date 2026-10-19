@@ -1,0 +1,294 @@
+AMUN sequence 2, part E: learning from F' behavior, TIMING/MEMORY gains mis-tuned HIGH (w0=0.2), learning ON then OFF, seeds 7 and 11, 12 min per arm.
+Script e13_w020.sh (from e13_w006.sh by sed w0=0.06 -> w0=0.2), inside amun_seq2.sh md5 07a17ec11b2158742245c91d4221611f. Logs /home/amun/f/e13_1018_1254 (seed 7), /home/amun/f/e13_1018_1320 (seed 11).
+Summary lines verbatim from the Pi console (2026-10-18):
+=== E seed 7 (w0=0.2)
+=== learn=1  start 12:55:00  (12 min, seed 7)
+=== learn=0  start 13:08:11  (12 min, seed 7)
+
+=== learning ON: deaths 0 (OOM 0), sheds 10 (justified 9, false 1), learning updates 1, stress events 26
+    Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+    window 1/3: deaths 0, false sheds 1, justified sheds 2
+    window 2/3: deaths 0, false sheds 0, justified sheds 5
+    window 3/3: deaths 0, false sheds 0, justified sheds 2
+
+=== learning OFF: deaths 0 (OOM 0), sheds 19 (justified 9, false 10), learning updates 0, stress events 26
+    window 1/3: deaths 0, false sheds 5, justified sheds 2
+    window 2/3: deaths 0, false sheds 2, justified sheds 5
+    window 3/3: deaths 0, false sheds 3, justified sheds 2
+E13 logs in /home/amun/f/e13_1018_1254
+
+=== E seed 11 (w0=0.2)
+=== learn=1  start 13:21:23  (12 min, seed 11)
+=== learn=0  start 13:34:51  (12 min, seed 11)
+
+=== learning ON: deaths 0 (OOM 0), sheds 14 (justified 13, false 1), learning updates 1, stress events 25
+    Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+    window 1/3: deaths 0, false sheds 1, justified sheds 6
+    window 2/3: deaths 0, false sheds 0, justified sheds 3
+    window 3/3: deaths 0, false sheds 0, justified sheds 4
+
+=== learning OFF: deaths 0 (OOM 0), sheds 18 (justified 13, false 5), learning updates 0, stress events 25
+    window 1/3: deaths 0, false sheds 1, justified sheds 6
+    window 2/3: deaths 0, false sheds 1, justified sheds 3
+    window 3/3: deaths 0, false sheds 3, justified sheds 4
+E13 logs in /home/amun/f/e13_1018_1320
+
+AMUN sequence 2 done 2026-10-18 13:47:34
+
+Raw stress schedule and shed/probe/learn events, verbatim (collect_1018.txt):
+247 /home/amun/collect_1018.txt
+=== /home/amun/f/e13_1018_1254 learn=1 stress
+1792353327.102 BURST 1200 rc=0
+1792353348.930 CACHE 4096 rc=0
+1792353375.558 BURST 1200 rc=0
+1792353399.889 BURST 900 rc=0
+1792353422.075 BURST 900 rc=0
+1792353444.129 RUNAWAY 500 rc=0
+1792353479.444 RUNAWAY 500 rc=0
+1792353509.334 BURST 1200 rc=0
+1792353536.421 LEAK 12288 rc=0
+1792353558.227 LEAK 12288 rc=0
+1792353583.679 BURST 600 rc=0
+1792353613.369 RUNAWAY 500 rc=0
+1792353644.706 BURST 1200 rc=0
+1792353675.393 BURST 1200 rc=0
+1792353707.247 RUNAWAY 500 rc=0
+1792353737.640 RUNAWAY 500 rc=0
+1792353766.728 CACHE 6144 rc=0
+1792353796.618 RUNAWAY 500 rc=0
+1792353822.274 CACHE 4096 rc=0
+1792353844.610 BURST 900 rc=0
+1792353878.837 CACHE 6144 rc=0
+1792353909.070 BURST 1200 rc=0
+1792353936.504 CACHE 4096 rc=0
+1792353971.656 BURST 1200 rc=0
+1792353993.978 RUNAWAY 500 rc=0
+1792354026.974 CACHE 6144 rc=0
+=== /home/amun/f/e13_1018_1254 learn=1 events
+EVENT: (268525600) (2:1792353330,923004) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792353343,210496) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525602) (2:1792353343,211279) ACTIVITY_HI: (Amun.neuro) Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+EVENT: (268525600) (2:1792353449,787722) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792353461,211139) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792353485,809391) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792353497,211062) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792353539,228939) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.148180 ms, growth 12296.000000 KB/tick)
+EVENT: (268525601) (2:1792353551,228842) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792353561,231461) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.552343 ms, growth 12288.000000 KB/tick)
+EVENT: (268525601) (2:1792353572,228743) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792353619,792496) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002563 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792353631,210989) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792353712,792615) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792353724,210925) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792353743,825116) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002319 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792353755,211045) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792353802,789208) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792353814,211017) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792353999,829588) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354011,211063) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+=== /home/amun/f/e13_1018_1254 learn=0 stress
+1792354117.513 BURST 1200 rc=0
+1792354139.346 CACHE 4096 rc=0
+1792354165.993 BURST 1200 rc=0
+1792354190.372 BURST 900 rc=0
+1792354212.525 BURST 900 rc=0
+1792354234.563 RUNAWAY 500 rc=0
+1792354269.925 RUNAWAY 500 rc=0
+1792354299.801 BURST 1200 rc=0
+1792354326.893 LEAK 12288 rc=0
+1792354348.700 LEAK 12288 rc=0
+1792354374.146 BURST 600 rc=0
+1792354403.814 RUNAWAY 500 rc=0
+1792354435.149 BURST 1200 rc=0
+1792354465.838 BURST 1200 rc=0
+1792354497.677 RUNAWAY 500 rc=0
+1792354528.117 RUNAWAY 500 rc=0
+1792354557.251 CACHE 6144 rc=0
+1792354587.182 RUNAWAY 500 rc=0
+1792354612.784 CACHE 4096 rc=0
+1792354635.119 BURST 900 rc=0
+1792354669.384 CACHE 6144 rc=0
+1792354699.685 BURST 1200 rc=0
+1792354727.060 CACHE 4096 rc=0
+1792354762.221 BURST 1200 rc=0
+1792354784.490 RUNAWAY 500 rc=0
+1792354817.487 CACHE 6144 rc=0
+=== /home/amun/f/e13_1018_1254 learn=0 events
+EVENT: (268525600) (2:1792354121,326334) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354133,640289) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354170,343454) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354182,641159) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354193,543396) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 900.002563 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354205,640552) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354215,543380) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 900.002014 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792354227,640366) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354240,217933) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002319 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354251,642305) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354276,218050) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354287,642298) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354304,325930) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.001953 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792354316,640462) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354329,661382) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 14.013186 ms, growth 12292.000000 KB/tick)
+EVENT: (268525601) (2:1792354340,660051) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792354351,663487) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.323581 ms, growth 12288.000000 KB/tick)
+EVENT: (268525601) (2:1792354363,660607) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792354410,232200) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354421,642419) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354439,318683) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354451,640434) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354470,318824) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354482,642223) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354503,231861) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354514,642392) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354534,232345) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.001953 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792354545,642435) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354593,239852) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354604,642261) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354638,543281) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 900.002136 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792354650,640332) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354703,353815) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354715,641705) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354766,340246) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354778,641684) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792354790,254415) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354801,642453) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+=== /home/amun/f/e13_1018_1320 learn=1 stress
+1792354911.589 RUNAWAY 500 rc=0
+1792354946.562 RUNAWAY 500 rc=0
+1792354975.287 RUNAWAY 500 rc=0
+1792354999.222 RUNAWAY 500 rc=0
+1792355029.776 CACHE 4096 rc=0
+1792355057.640 BURST 1200 rc=0
+1792355090.894 RUNAWAY 500 rc=0
+1792355112.629 LEAK 12288 rc=0
+1792355148.246 RUNAWAY 500 rc=0
+1792355178.642 BURST 600 rc=0
+1792355212.225 BURST 600 rc=0
+1792355236.182 BURST 600 rc=0
+1792355268.959 BURST 1200 rc=0
+1792355302.699 RUNAWAY 500 rc=0
+1792355333.409 RUNAWAY 500 rc=0
+1792355364.452 RUNAWAY 500 rc=0
+1792355389.733 LEAK 12288 rc=0
+1792355425.827 CACHE 6144 rc=0
+1792355451.660 BURST 900 rc=0
+1792355473.205 RUNAWAY 500 rc=0
+1792355495.977 BURST 900 rc=0
+1792355522.881 LEAK 12288 rc=0
+1792355556.700 BURST 600 rc=0
+1792355591.713 BURST 900 rc=0
+1792355627.523 BURST 600 rc=0
+=== /home/amun/f/e13_1018_1320 learn=1 events
+EVENT: (268525600) (2:1792354917,482257) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002563 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354928,891511) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354952,489129) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002319 ms, growth 8.000000 KB/tick)
+EVENT: (268525601) (2:1792354963,891546) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792354981,469730) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792354992,891451) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355005,489068) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355016,891426) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355061,605175) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002563 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355073,889307) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525602) (2:1792355073,889782) ACTIVITY_HI: (Amun.neuro) Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+EVENT: (268525600) (2:1792355096,472796) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355107,891550) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355114,910218) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.267307 ms, growth 12292.000000 KB/tick)
+EVENT: (268525601) (2:1792355125,909091) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792355154,467989) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355165,891523) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355308,469881) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355319,891501) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355339,487175) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355350,891452) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355370,475258) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792355381,891400) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355392,936519) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 26.913536 ms, growth 12288.000000 KB/tick)
+EVENT: (268525601) (2:1792355403,923890) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792355479,490236) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355490,891344) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355526,931897) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 26.523882 ms, growth 12288.000000 KB/tick)
+EVENT: (268525601) (2:1792355538,928999) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+=== /home/amun/f/e13_1018_1320 learn=0 stress
+1792355720.015 RUNAWAY 500 rc=0
+1792355755.042 RUNAWAY 500 rc=0
+1792355783.806 RUNAWAY 500 rc=0
+1792355807.730 RUNAWAY 500 rc=0
+1792355838.343 CACHE 4096 rc=0
+1792355866.142 BURST 1200 rc=0
+1792355899.430 RUNAWAY 500 rc=0
+1792355921.219 LEAK 12288 rc=0
+1792355956.797 RUNAWAY 500 rc=0
+1792355987.198 BURST 600 rc=0
+1792356020.809 BURST 600 rc=0
+1792356044.769 BURST 600 rc=0
+1792356077.599 BURST 1200 rc=0
+1792356111.397 RUNAWAY 500 rc=0
+1792356142.167 RUNAWAY 500 rc=0
+1792356173.230 RUNAWAY 500 rc=0
+1792356198.507 LEAK 12288 rc=0
+1792356234.604 CACHE 6144 rc=0
+1792356260.429 BURST 900 rc=0
+1792356281.981 RUNAWAY 500 rc=0
+1792356304.745 BURST 900 rc=0
+1792356331.706 LEAK 12288 rc=0
+1792356365.547 BURST 600 rc=0
+1792356400.561 BURST 900 rc=0
+1792356436.374 BURST 600 rc=0
+=== /home/amun/f/e13_1018_1320 learn=0 events
+EVENT: (268525600) (2:1792355725,869301) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355737,271714) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355760,885356) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002563 ms, growth 8.000000 KB/tick)
+EVENT: (268525601) (2:1792355772,271820) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355789,869196) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002197 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355801,271684) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355813,868949) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355825,271680) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355869,969652) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355882,269795) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792355904,882144) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355916,271727) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792355923,289506) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.223143 ms, growth 12296.000000 KB/tick)
+EVENT: (268525601) (2:1792355934,304551) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792355962,847356) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002319 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792355974,271851) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792356081,969654) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002075 ms, growth 4.000000 KB/tick)
+EVENT: (268525601) (2:1792356094,269026) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792356116,882393) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356128,271802) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792356147,882948) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356159,271693) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792356178,882602) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002930 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356190,271705) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792356202,293025) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.298753 ms, growth 12288.000000 KB/tick)
+EVENT: (268525601) (2:1792356214,304299) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792356264,172716) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 900.002319 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356276,271487) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792356287,849222) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002686 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356299,271747) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525600) (2:1792356308,172816) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 900.002563 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356320,269752) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525600) (2:1792356336,319831) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 32.270824 ms, growth 12288.000000 KB/tick)
+EVENT: (268525601) (2:1792356348,292605) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525600) (2:1792356404,172757) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 900.001892 ms, growth 0.000000 KB/tick)
+EVENT: (268525601) (2:1792356416,271055) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+=== GDS /home/amun/amun/fprime/amun-fsw/AmunDeployment/logs/fprime-cli-2026_10_18-13_47_16/
+channel.log
+command.log
+event.log
+fprime-cli.log
+recv.bin
+sent.bin
+0
+0
+0
+0
+0
+0
+(fprime-venv) amun@amun:~/amun/fprime/amun-fsw/AmunDeployment $
+Verification (2026-10-18, by matching stress times to SHED/PROBE/LEARN event times):
+- Without learning, every BURST of 900 or 1200 ms is shed and the probe 12 s later finds it unjustified: seed 7 10 of 10 such bursts, seed 11 5 of 5. BURST 600 ms is never shed. CACHE is never shed.
+- With learning, the first such burst is shed (seed 7: BURST 1200 at ...327.10, SHED ...330.92, PROBE justified=0 ...343.21, LEARN TIMING (false shed) 0.20->0.17, floor -18->-20 at ...343.21;
+  seed 11: BURST 1200 at ...5057.64, SHED ...5061.61, PROBE 0 ...5073.89, LEARN same values ...5073.89). None of the later bursts >=900 ms is shed (seed 7: 9, seed 11: 4; 13 in all).
+- Every RUNAWAY 500 and every LEAK is shed and judged justified in all four arms: seed 7 7+2 per arm, seed 11 10+3 per arm. No death in any arm.
+- Rule check: gain 0.2*(1-0.15)=0.17; floor -18-2=-20 (delta=-1 lowers both).
+- GDS FramesSent: the newest log dir was an fprime-cli folder (no channels); FramesSent comes from the fprime-gds session folder of the power run.

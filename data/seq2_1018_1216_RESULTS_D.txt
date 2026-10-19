@@ -1,0 +1,28 @@
+AMUN sequence 2, part D: reset loop, persisted timing fault (RUNAWAY 1000) at a random onset 33-38 s after AUTONOMY.
+B0, B1 (K=3) and B2 (1 s checkpoint), 5 runs each interleaved; watchdog 3 s, cap 6 deaths; learn=0 w0=0.1 b0=-18 audit=3.
+Script: amun_seq2.sh md5 07a17ec11b2158742245c91d4221611f. Pi output: /home/amun/f/seq2_1018_1216/RESULTS.txt
+Started 2026-10-18 12:16:12 PT. Transcribed verbatim from the Pi console on 2026-10-18.
+
+D1-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=36.20s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D1-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=35.03s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D1-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=36.76s deaths=1 watchdog=1 oom=0 named=[TIMING:1.18] SAFE=TIMING hwerr=0
+D2-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=36.95s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D2-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=35.37s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D2-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=36.20s deaths=1 watchdog=1 oom=0 named=[TIMING:1.17] SAFE=TIMING hwerr=0
+D3-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=35.84s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D3-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=34.89s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D3-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=37.45s deaths=1 watchdog=1 oom=0 named=[TIMING:1.17] SAFE=TIMING hwerr=0
+D4-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=37.59s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D4-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=36.02s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D4-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=36.96s deaths=1 watchdog=1 oom=0 named=[TIMING:1.16] SAFE=TIMING hwerr=0
+D5-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=33.01s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D5-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=37.12s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D5-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=37.65s deaths=1 watchdog=1 oom=0 named=[TIMING:1.18] SAFE=TIMING hwerr=0
+
+=== Summary D
+D-B0: runs 5, deaths per run [6, 6, 6, 6, 6], capped 5, cause at first death {'unknown': 5}, SAFE {'-': 5}
+D-B1: runs 5, deaths per run [3, 3, 3, 3, 3], capped 0, cause at first death {'unknown': 5}, SAFE {'ALL': 5}
+D-B2ckpt1: runs 5, deaths per run [1, 1, 1, 1, 1], capped 0, cause at first death {'TIMING': 5}, SAFE {'TIMING': 5}
+
+Note: B0 lists 5 named entries for 6 deaths because the supervisor stops at the 6th death, so no warm start follows it.
+Combined with the first runs (Table II, one run each): B0 6/6 runs capped at 6 deaths; B1 6/6 runs 3 deaths, SAFE=ALL; B2 P=1 s 6/6 runs 1 death, TIMING named.

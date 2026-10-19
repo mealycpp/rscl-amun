@@ -1,0 +1,349 @@
+1792353253.164617894 start pid=181946
+Hit Ctrl-C to quit
+EVENT: (83898374) (2:1792353253,170170) WARNING_HI: (FileHandling.prmDb) PrmFileReadError : Parameter file read failed in stage OPEN (0) with record 0 and error 1
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+
+[NOTE] Task Permissions:
+[NOTE]
+[NOTE] You have insufficient permissions to create a task with priority and/or cpu affinity.
+[NOTE] A task without priority and affinity will be created.
+[NOTE]
+[NOTE] There are three possible resolutions:
+[NOTE] 1. Use tasks without priority and affinity using parameterless start()
+[NOTE] 2. Run this executable as a user with task priority permission
+[NOTE] 3. Grant capability with "setcap 'cap_sys_nice=eip'" or equivalent
+
+[WARNING] Amun.analog stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.cmdSeq stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.neuro stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_25Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_0_5Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] Amun.rateGroup_1Hz stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.cmdDisp stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.events stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+[WARNING] CdhCore.tlmSend stack size of 65536  is too small, clamping to 131072
+EVENT: (16789504) (2:1792353253,171635) ACTIVITY_LO: (CdhCore.version) FrameworkVersion : Framework Version: [v4.4.1]
+EVENT: (16789505) (2:1792353253,171668) ACTIVITY_LO: (CdhCore.version) ProjectVersion : Project Version: [v4.3.0]
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.aggregator stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] ComCcsds.comQueue stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpBufferAccumulator stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpCat stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpMgr stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] DataProducts.dpWriter stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileDownlink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileManager stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.fileUplink stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] FileHandling.prmDb stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+[WARNING] ReceiveTask stack size of 65536  is too small, clamping to 131072
+Connected to 127.0.0.1:50000 as a tcp client
+EVENT: (33591296) (2:1792353254,622442) WARNING_LO: (ComCcsds.apidManager) UnexpectedSequenceCount : Unexpected sequence count received. Packets may have been dropped. Transmitted: 233 | Expected on board: 0
+EVENT: (16777217) (2:1792353254,623260) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016000 dispatched to port 2
+EVENT: (268525585) (2:1792353258,410665) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 4 hold drift 2.928072 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525585) (2:1792353258,413860) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 2 hold drift 1.859182 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525585) (2:1792353258,416318) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 3 hold drift 1.040966 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525585) (2:1792353258,419319) ACTIVITY_HI: (Amun.neuro) LeakMeasured : Neuron 1 hold drift 0.037344 units/s at w=0.1 (3 s hold at BOOT, compensated in MONITOR)
+EVENT: (268525568) (2:1792353258,610414) ACTIVITY_HI: (Amun.neuro) Booted : Neurons booted: polarity mask 0x0, 164 frames, all neurons zeroed and biased
+EVENT: (16777218) (2:1792353258,610522) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016000 completed
+EVENT: (16777217) (2:1792353265,783809) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016016 dispatched to port 2
+EVENT: (268525597) (2:1792353265,784336) ACTIVITY_HI: (Amun.neuro) Assigned : Monitors assigned by retention: TIMING->n1 MEMORY->n3 GPS-LINK->n2 CLOCK->n4
+EVENT: (268525572) (2:1792353265,784474) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 1 weights: Cf=255 C_V2=51 C_V1=51
+EVENT: (268525572) (2:1792353265,784526) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 3 weights: Cf=255 C_V2=51 C_V1=51
+EVENT: (268525572) (2:1792353265,784558) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 2 weights: Cf=250 C_V2=25 C_V1=25
+EVENT: (268525605) (2:1792353265,834387) ACTIVITY_HI: (Amun.neuro) WarmStart : Warm start: policy AMUN, SAFE = 0, persisted faults loaded 0
+EVENT: (16777218) (2:1792353265,834551) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016016 completed
+EVENT: (268525606) (2:1792353281,231372) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000744 -> analog -23.854454
+EVENT: (268525606) (2:1792353292,231311) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001478 -> analog -23.273350
+EVENT: (268525598) (2:1792353295,174177) ACTIVITY_HI: (Amun.neuro) Baseline : Baseline TIMING: offset 0.000000 scale 1500.000000
+EVENT: (268525598) (2:1792353295,174281) ACTIVITY_HI: (Amun.neuro) Baseline : Baseline MEMORY: offset 6.008764 scale 6553.600098
+EVENT: (268525598) (2:1792353295,174309) ACTIVITY_HI: (Amun.neuro) Baseline : Baseline GPS-LINK: offset 1.285246 scale 3.000000
+EVENT: (268525606) (2:1792353303,229726) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000992 -> analog -23.477348
+EVENT: (268525606) (2:1792353313,229525) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999937 -> analog -22.859390
+EVENT: (268525606) (2:1792353323,231203) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000511 -> analog -23.027351
+EVENT: (268525607) (2:1792353326,915886) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1792353326,915867) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353326,915999) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353329,684861) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800001 membrane 7.519933
+EVENT: (268525600) (2:1792353330,923004) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 1200.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353334,229864) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000893 -> analog -23.595493
+EVENT: (268525606) (2:1792353337,239466) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000454 -> analog -14.326707
+EVENT: (268525601) (2:1792353343,210496) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 0
+EVENT: (268525572) (2:1792353343,210686) ACTIVITY_LO: (Amun.neuro) WeightsSet : Neuron 1 weights: Cf=200 C_V2=34 C_V1=34
+EVENT: (268525602) (2:1792353343,211279) ACTIVITY_HI: (Amun.neuro) Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+EVENT: (268525606) (2:1792353344,231256) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000607 -> analog -23.113276
+EVENT: (16777217) (2:1792353348,744566) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353348,744753) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 4096
+EVENT: (16777218) (2:1792353348,744809) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353351,227901) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 0.624693 membrane 8.856421
+EVENT: (268525606) (2:1792353351,253532) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.978254 -> analog -23.193699
+EVENT: (268525606) (2:1792353355,229105) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001850 -> analog -22.153944
+EVENT: (268525606) (2:1792353362,237627) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.976828 -> analog -24.128754
+EVENT: (268525606) (2:1792353366,229567) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001326 -> analog -22.992010
+EVENT: (268525606) (2:1792353373,234989) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001163 -> analog -24.136780
+EVENT: (268525607) (2:1792353375,372777) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1792353375,372759) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353375,372890) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353377,431083) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000914 -> analog -24.568995
+EVENT: (268525599) (2:1792353379,909374) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800002 membrane 12.508207
+EVENT: (268525606) (2:1792353383,234891) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000734 -> analog -24.033178
+EVENT: (268525606) (2:1792353393,236722) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.961380 -> analog -23.811550
+EVENT: (268525606) (2:1792353397,231241) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999893 -> analog -23.482195
+EVENT: (268525607) (2:1792353399,700985) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777217) (2:1792353399,700966) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353399,701103) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353403,112223) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.600002 membrane 4.366959
+EVENT: (268525606) (2:1792353404,239869) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.999268 -> analog -24.749941
+EVENT: (268525606) (2:1792353408,231687) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001045 -> analog -23.739042
+EVENT: (268525606) (2:1792353412,239147) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000050 -> analog -14.146331
+EVENT: (268525606) (2:1792353416,235431) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001034 -> analog -24.817533
+EVENT: (268525606) (2:1792353419,231376) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001801 -> analog -23.321936
+EVENT: (268525607) (2:1792353421,887889) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777217) (2:1792353421,887871) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353421,888048) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353425,111944) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.600001 membrane 4.379640
+EVENT: (268525606) (2:1792353426,241167) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.998489 -> analog -24.167103
+EVENT: (268525606) (2:1792353430,231056) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999683 -> analog -23.012903
+EVENT: (268525606) (2:1792353434,238219) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000036 -> analog -14.537087
+EVENT: (268525606) (2:1792353437,237091) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.978550 -> analog -24.602236
+EVENT: (268525606) (2:1792353441,229508) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001427 -> analog -22.979794
+EVENT: (268525607) (2:1792353443,941277) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1792353443,941258) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353443,941393) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353447,750834) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 7.084411
+EVENT: (268525600) (2:1792353449,787722) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.001953 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353449,803427) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 17.998718 -> analog 13.232094
+EVENT: (268525606) (2:1792353451,229409) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001305 -> analog -22.616724
+EVENT: (268525606) (2:1792353458,235134) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000544 -> analog -24.029026
+EVENT: (268525601) (2:1792353461,211139) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792353461,211278) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792353461,275870) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001804 -> analog -22.291210
+EVENT: (268525606) (2:1792353468,236846) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001446 -> analog -24.358227
+EVENT: (268525606) (2:1792353472,229531) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000862 -> analog -22.984501
+EVENT: (268525606) (2:1792353479,235318) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.999968 -> analog -24.533987
+EVENT: (16777217) (2:1792353479,257265) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353479,257285) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777218) (2:1792353479,257395) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353483,750973) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 7.085154
+EVENT: (268525606) (2:1792353483,772573) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000257 -> analog -24.897444
+EVENT: (268525600) (2:1792353485,809391) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353489,235039) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000574 -> analog -24.238945
+EVENT: (268525601) (2:1792353497,211062) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792353497,211144) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792353499,236281) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.973577 -> analog -24.072914
+EVENT: (268525606) (2:1792353503,229409) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000858 -> analog -22.724432
+EVENT: (268525606) (2:1792353506,239092) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000668 -> analog -14.123557
+EVENT: (268525607) (2:1792353509,146034) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1792353509,146015) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353509,146150) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353511,654024) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 1.678203 -> analog -3.652380
+EVENT: (268525599) (2:1792353512,893332) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800001 membrane 7.181288
+EVENT: (268525606) (2:1792353514,229786) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000580 -> analog -23.211018
+EVENT: (268525606) (2:1792353521,236809) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.963287 -> analog -24.200354
+EVENT: (268525606) (2:1792353525,229649) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000059 -> analog -23.097464
+EVENT: (268525606) (2:1792353532,235610) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001097 -> analog -25.153383
+EVENT: (268525606) (2:1792353535,230645) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000452 -> analog -22.539139
+EVENT: (268525607) (2:1792353536,234383) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK LEAK 12288
+EVENT: (16777217) (2:1792353536,234364) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353536,234517) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353538,228657) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 1.000000 membrane 11.916586
+EVENT: (268525600) (2:1792353539,228939) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.148180 ms, growth 12296.000000 KB/tick)
+EVENT: (268525606) (2:1792353542,236449) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.978170 -> analog -24.373217
+EVENT: (268525606) (2:1792353546,230881) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001387 -> analog -22.774839
+EVENT: (268525601) (2:1792353551,228842) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525607) (2:1792353551,228959) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated MEMORY 0
+EVENT: (268525606) (2:1792353553,236960) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.980225 -> analog -24.587416
+EVENT: (268525606) (2:1792353557,229596) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000309 -> analog -22.713247
+EVENT: (16777217) (2:1792353558,37248) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353558,37267) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK LEAK 12288
+EVENT: (16777218) (2:1792353558,37498) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353560,228377) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 1.000000 membrane 11.917571
+EVENT: (268525600) (2:1792353561,231461) WARNING_HI: (Amun.neuro) Shed : SHED MEMORY: non-essential work stopped (exec 13.552343 ms, growth 12288.000000 KB/tick)
+EVENT: (268525606) (2:1792353564,235723) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000881 -> analog -24.834229
+EVENT: (268525606) (2:1792353567,230854) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999908 -> analog -22.253292
+EVENT: (268525601) (2:1792353572,228743) ACTIVITY_HI: (Amun.neuro) Probe : PROBE MEMORY: shed justified = 1
+EVENT: (268525607) (2:1792353572,228852) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated MEMORY 0
+EVENT: (268525606) (2:1792353574,236917) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.985491 -> analog -24.445784
+EVENT: (268525606) (2:1792353578,229647) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000103 -> analog -22.975323
+EVENT: (268525607) (2:1792353583,488530) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 600
+EVENT: (16777217) (2:1792353583,488510) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353583,488644) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353585,827133) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -9.195254 -> analog -14.256339
+EVENT: (268525606) (2:1792353588,229433) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999853 -> analog -22.370255
+EVENT: (268525606) (2:1792353596,235120) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000093 -> analog -24.214745
+EVENT: (268525606) (2:1792353599,230753) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999569 -> analog -22.924543
+EVENT: (268525606) (2:1792353606,235449) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.999952 -> analog -24.648020
+EVENT: (268525606) (2:1792353609,230493) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001728 -> analog -22.299738
+EVENT: (16777217) (2:1792353613,189107) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353613,208553) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777218) (2:1792353613,208760) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353617,750838) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 7.084774
+EVENT: (268525606) (2:1792353617,754138) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 7.084774 -> analog 2.683612
+EVENT: (268525600) (2:1792353619,792496) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002563 ms, growth 4.000000 KB/tick)
+EVENT: (268525606) (2:1792353619,857435) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000072 -> analog -22.867250
+EVENT: (268525606) (2:1792353626,234775) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000433 -> analog -23.725937
+EVENT: (268525606) (2:1792353629,730371) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000677 -> analog -22.994989
+EVENT: (268525601) (2:1792353631,210989) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792353631,211066) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792353636,237242) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.978003 -> analog -24.117878
+EVENT: (268525606) (2:1792353640,227619) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000656 -> analog -21.785818
+EVENT: (268525607) (2:1792353644,518883) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1792353644,518863) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353644,519015) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353647,652967) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 1.679769 -> analog -3.243598
+EVENT: (268525599) (2:1792353648,892153) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800001 membrane 7.590061
+EVENT: (268525606) (2:1792353650,229448) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001711 -> analog -22.617737
+EVENT: (268525606) (2:1792353658,235435) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001390 -> analog -24.727983
+EVENT: (268525606) (2:1792353661,231122) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000652 -> analog -22.910624
+EVENT: (268525606) (2:1792353668,235162) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001173 -> analog -24.337839
+EVENT: (268525606) (2:1792353671,231106) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000977 -> analog -22.671144
+EVENT: (16777217) (2:1792353675,205399) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353675,243256) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777218) (2:1792353675,243552) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353679,888371) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800001 membrane 12.509140
+EVENT: (268525606) (2:1792353679,897925) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 12.509140 -> analog 7.995492
+EVENT: (268525606) (2:1792353682,229506) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001703 -> analog -22.857218
+EVENT: (268525606) (2:1792353689,237108) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.963606 -> analog -24.750149
+EVENT: (268525606) (2:1792353693,230768) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001152 -> analog -23.014139
+EVENT: (268525606) (2:1792353700,235306) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000347 -> analog -24.640846
+EVENT: (268525606) (2:1792353703,230699) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000574 -> analog -22.608589
+EVENT: (268525607) (2:1792353707,58438) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1792353707,58419) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353707,58560) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353710,750811) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 7.050066
+EVENT: (268525606) (2:1792353710,754292) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 7.050066 -> analog 2.846086
+EVENT: (268525600) (2:1792353712,792615) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353712,857362) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001801 -> analog -22.538589
+EVENT: (268525606) (2:1792353720,235397) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000164 -> analog -24.518764
+EVENT: (268525601) (2:1792353724,210925) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792353724,211017) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792353724,276093) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000095 -> analog -23.258028
+EVENT: (268525606) (2:1792353732,235646) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001152 -> analog -25.144390
+EVENT: (268525606) (2:1792353735,230824) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000057 -> analog -22.914255
+EVENT: (268525607) (2:1792353737,454273) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1792353737,454256) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353737,454376) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353741,788142) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 7.082550
+EVENT: (268525600) (2:1792353743,825116) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002319 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353743,872317) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 4.322447 -> analog -0.362097
+EVENT: (268525606) (2:1792353747,230014) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000769 -> analog -23.827063
+EVENT: (268525606) (2:1792353753,732859) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.477072 -> analog -19.658638
+EVENT: (268525601) (2:1792353755,211045) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792353755,211147) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792353757,229319) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001560 -> analog -22.510521
+EVENT: (268525606) (2:1792353764,237356) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000484 -> analog -24.616673
+EVENT: (16777217) (2:1792353766,541116) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353766,541135) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 6144
+EVENT: (16777218) (2:1792353766,541243) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353768,231949) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000767 -> analog -23.233810
+EVENT: (268525599) (2:1792353770,229432) WARNING_LO: (Amun.neuro) Warn : WARN MEMORY: evidence 0.936583 membrane 9.884888
+EVENT: (268525606) (2:1792353776,236893) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.993341 -> analog -24.968037
+EVENT: (268525606) (2:1792353780,229561) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000248 -> analog -22.961332
+EVENT: (268525606) (2:1792353787,235252) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001078 -> analog -24.547384
+EVENT: (268525606) (2:1792353790,230827) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001108 -> analog -22.753702
+EVENT: (16777217) (2:1792353796,431278) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353796,431299) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777218) (2:1792353796,431415) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353797,732179) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -15.506453 -> analog -20.469564
+EVENT: (268525599) (2:1792353800,750773) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 2.590115
+EVENT: (268525600) (2:1792353802,789208) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002441 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353802,811355) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001463 -> analog -25.997301
+EVENT: (268525606) (2:1792353808,235380) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000490 -> analog -24.744865
+EVENT: (268525601) (2:1792353814,211017) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792353814,211129) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792353818,237635) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.987028 -> analog -24.142378
+EVENT: (268525607) (2:1792353822,85920) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 4096
+EVENT: (16777217) (2:1792353822,85900) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353822,86035) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353822,231785) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000231 -> analog -23.489845
+EVENT: (268525606) (2:1792353829,236620) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.968464 -> analog -24.689020
+EVENT: (268525606) (2:1792353832,230603) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999647 -> analog -22.558187
+EVENT: (268525606) (2:1792353840,235258) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001520 -> analog -24.540363
+EVENT: (268525606) (2:1792353843,231029) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000200 -> analog -22.772371
+EVENT: (268525607) (2:1792353844,424724) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 900
+EVENT: (16777217) (2:1792353844,424705) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353844,424839) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353848,112046) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.600001 membrane 4.374758
+EVENT: (268525606) (2:1792353850,236869) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000494 -> analog -24.676929
+EVENT: (268525606) (2:1792353854,229666) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001522 -> analog -23.225815
+EVENT: (268525606) (2:1792353861,235661) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000154 -> analog -24.673626
+EVENT: (268525606) (2:1792353864,231516) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000319 -> analog -22.410118
+EVENT: (268525606) (2:1792353872,235401) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000124 -> analog -24.647654
+EVENT: (268525606) (2:1792353875,231315) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000443 -> analog -23.014257
+EVENT: (16777217) (2:1792353878,650121) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353878,650140) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 6144
+EVENT: (16777218) (2:1792353878,650249) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353882,243002) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.983648 -> analog -24.151730
+EVENT: (268525606) (2:1792353886,229677) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000944 -> analog -23.106480
+EVENT: (268525606) (2:1792353893,237200) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.976116 -> analog -24.968605
+EVENT: (268525606) (2:1792353897,229620) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001564 -> analog -23.186222
+EVENT: (268525606) (2:1792353904,235763) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001444 -> analog -25.357082
+EVENT: (268525606) (2:1792353907,231047) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000582 -> analog -22.682041
+EVENT: (268525607) (2:1792353908,883894) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777217) (2:1792353908,883877) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353908,884010) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353912,926152) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800001 membrane 12.511536
+EVENT: (268525606) (2:1792353914,236473) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.998974 -> analog -24.527554
+EVENT: (268525606) (2:1792353918,231400) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001682 -> analog -23.317776
+EVENT: (268525606) (2:1792353922,239638) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000605 -> analog -14.573897
+EVENT: (268525606) (2:1792353926,235928) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000908 -> analog -25.667583
+EVENT: (268525606) (2:1792353929,231223) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000029 -> analog -23.113556
+EVENT: (268525606) (2:1792353936,239677) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001030 -> analog -24.193005
+EVENT: (16777217) (2:1792353936,316119) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353936,316141) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 4096
+EVENT: (16777218) (2:1792353936,316253) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792353940,231236) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001259 -> analog -23.348072
+EVENT: (268525606) (2:1792353947,235592) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000610 -> analog -25.045956
+EVENT: (268525606) (2:1792353950,232211) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999798 -> analog -22.892078
+EVENT: (268525606) (2:1792353957,236980) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.972553 -> analog -24.456345
+EVENT: (268525606) (2:1792353961,229708) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000357 -> analog -23.200518
+EVENT: (268525606) (2:1792353968,235552) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000813 -> analog -24.935427
+EVENT: (268525606) (2:1792353971,229808) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001471 -> analog -22.826042
+EVENT: (16777217) (2:1792353971,469318) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792353971,469339) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK BURST 1200
+EVENT: (16777218) (2:1792353971,469453) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353975,888426) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 0.800002 membrane 12.510380
+EVENT: (268525606) (2:1792353978,235044) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001144 -> analog -24.226658
+EVENT: (268525606) (2:1792353981,230699) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -17.999983 -> analog -22.761599
+EVENT: (268525606) (2:1792353985,237506) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000357 -> analog -14.198772
+EVENT: (268525606) (2:1792353988,236483) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.978680 -> analog -24.122553
+EVENT: (268525606) (2:1792353992,229527) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.001066 -> analog -22.976116
+EVENT: (268525607) (2:1792353993,789967) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK RUNAWAY 500
+EVENT: (16777217) (2:1792353993,789949) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (16777218) (2:1792353993,790069) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525599) (2:1792353997,753827) WARNING_LO: (Amun.neuro) Warn : WARN TIMING: evidence 1.000000 membrane 7.084264
+EVENT: (268525600) (2:1792353999,829588) WARNING_HI: (Amun.neuro) Shed : SHED TIMING: non-essential work stopped (exec 2000.002075 ms, growth 0.000000 KB/tick)
+EVENT: (268525606) (2:1792353999,875607) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate 4.322635 -> analog -1.307507
+EVENT: (268525606) (2:1792354003,229806) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000933 -> analog -23.471851
+EVENT: (268525606) (2:1792354006,238597) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 2: estimate -18.000237 -> analog -14.104181
+EVENT: (268525601) (2:1792354011,211063) ACTIVITY_HI: (Amun.neuro) Probe : PROBE TIMING: shed justified = 1
+EVENT: (268525607) (2:1792354011,211146) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK isolated TIMING 0
+EVENT: (268525606) (2:1792354011,225096) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -6.476900 -> analog -11.806231
+EVENT: (268525606) (2:1792354013,231139) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000893 -> analog -22.768637
+EVENT: (268525606) (2:1792354020,235102) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.001518 -> analog -24.236767
+EVENT: (268525606) (2:1792354023,230852) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000797 -> analog -22.605749
+EVENT: (16777217) (2:1792354026,787929) COMMAND: (CdhCore.cmdDisp) OpCodeDispatched : Opcode 0x10016017 dispatched to port 2
+EVENT: (268525607) (2:1792354026,787950) ACTIVITY_LO: (Amun.neuro) TaskEvent : TASK CACHE 6144
+EVENT: (16777218) (2:1792354026,788052) COMMAND: (CdhCore.cmdDisp) OpCodeCompleted : Opcode 0x10016017 completed
+EVENT: (268525606) (2:1792354030,237221) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -20.000105 -> analog -24.225275
+EVENT: (268525606) (2:1792354033,231203) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 3: estimate -18.000614 -> analog -22.590712
+EVENT: (268525606) (2:1792354040,236442) WARNING_LO: (Amun.neuro) AuditFix : AUDIT neuron 1: estimate -19.977417 -> analog -24.162472
+[WARNING] ReceiveTask failed to recv from port with status -8 and errno 0
+Exiting...

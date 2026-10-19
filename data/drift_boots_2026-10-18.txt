@@ -1,0 +1,16 @@
+Per-neuron hold drift d_k (units/s at w=0.1, 3 s hold at BOOT), all logged boots.
+
+54 boots of the final build, from the supervisor logs on the Pi (seq_1011_1907, seq2_1018_1216, e13_*, power_1018_1433), 2026-10-18:
+grep -h "hold drift" /home/amun/f/seq_*/sup_*.log /home/amun/f/seq2_*/sup_*.log /home/amun/f/e13_*/sup_*.log /home/amun/f/power_*/sup.log | ... (min/max per neuron)
+n1: 54 boots, -0.209 to 0.101 units/s
+n2: 54 boots, 1.676 to 1.964 units/s
+n3: 54 boots, 0.871 to 1.057 units/s
+n4: 54 boots, 2.830 to 3.146 units/s
+
+3 earlier boots (GDS/console logs, Oct 10-11):
+2026-10-10 ~20:xx (v4): n1 -0.069923, n2 1.915712, n3 0.961208, n4 3.023121
+2026-10-10 21:32 (E8 session): n1 -0.043527, n2 1.880713, n3 0.984889, n4 2.794181
+2026-10-11 00:42: n1 0.025147, n2 1.907119, n3 0.989034, n4 2.876270
+
+All 57 boots: n1 -0.21..0.10, n2 1.68..1.96, n3 0.87..1.06, n4 2.79..3.15 units/s.
+The ranges do not overlap, so the drift order n1 < n3 < n2 < n4 (role assignment) holds in every boot.

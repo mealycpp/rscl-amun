@@ -1,0 +1,58 @@
+AMUN sequence 2 start 2026-10-18 12:16:12   results dir /home/amun/f/seq2_1018_1216
+D: RUNAWAY 1000 at random onset 33-38 s after AUTONOMY; B0, B1 (K=3), B2 ckpt=1, 5 runs each interleaved; watchdog 3 s, cap 6 deaths
+E: /home/amun/f/seq2_1018_1216/e13_w020.sh (w0=0.2), 12 min per arm, learning ON then OFF, seeds 7 and 11
+
+D1-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=36.20s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D1-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=35.03s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D1-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=36.76s deaths=1 watchdog=1 oom=0 named=[TIMING:1.18] SAFE=TIMING hwerr=0
+D2-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=36.95s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D2-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=35.37s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D2-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=36.20s deaths=1 watchdog=1 oom=0 named=[TIMING:1.17] SAFE=TIMING hwerr=0
+D3-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=35.84s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D3-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=34.89s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D3-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=37.45s deaths=1 watchdog=1 oom=0 named=[TIMING:1.17] SAFE=TIMING hwerr=0
+D4-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=37.59s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D4-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=36.02s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D4-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=36.96s deaths=1 watchdog=1 oom=0 named=[TIMING:1.16] SAFE=TIMING hwerr=0
+D5-b0 grp=D-B0 cfg="policy=B0" fault="RUNAWAY 1000" onset=33.01s deaths=6 CAPPED watchdog=6 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00,unknown:0.00] SAFE=- hwerr=0
+D5-b1 grp=D-B1 cfg="policy=B1" fault="RUNAWAY 1000" onset=37.12s deaths=3 watchdog=3 oom=0 named=[unknown:0.00,unknown:0.00,unknown:0.00] SAFE=ALL hwerr=0
+D5-c1 grp=D-B2ckpt1 cfg="policy=B2 ckpt=1" fault="RUNAWAY 1000" onset=37.65s deaths=1 watchdog=1 oom=0 named=[TIMING:1.18] SAFE=TIMING hwerr=0
+
+=== Summary D
+D-B0: runs 5, deaths per run [6, 6, 6, 6, 6], capped 5, cause at first death {'unknown': 5}, SAFE {'-': 5}
+D-B1: runs 5, deaths per run [3, 3, 3, 3, 3], capped 0, cause at first death {'unknown': 5}, SAFE {'ALL': 5}
+D-B2ckpt1: runs 5, deaths per run [1, 1, 1, 1, 1], capped 0, cause at first death {'TIMING': 5}, SAFE {'TIMING': 5}
+
+=== E seed 7 (w0=0.2)
+=== learn=1  start 12:55:00  (12 min, seed 7)
+=== learn=0  start 13:08:11  (12 min, seed 7)
+
+=== learning ON: deaths 0 (OOM 0), sheds 10 (justified 9, false 1), learning updates 1, stress events 26
+    Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+    window 1/3: deaths 0, false sheds 1, justified sheds 2
+    window 2/3: deaths 0, false sheds 0, justified sheds 5
+    window 3/3: deaths 0, false sheds 0, justified sheds 2
+
+=== learning OFF: deaths 0 (OOM 0), sheds 19 (justified 9, false 10), learning updates 0, stress events 26
+    window 1/3: deaths 0, false sheds 5, justified sheds 2
+    window 2/3: deaths 0, false sheds 2, justified sheds 5
+    window 3/3: deaths 0, false sheds 3, justified sheds 2
+E13 logs in /home/amun/f/e13_1018_1254
+
+=== E seed 11 (w0=0.2)
+=== learn=1  start 13:21:23  (12 min, seed 11)
+=== learn=0  start 13:34:51  (12 min, seed 11)
+
+=== learning ON: deaths 0 (OOM 0), sheds 14 (justified 13, false 1), learning updates 1, stress events 25
+    Learned : LEARN TIMING (false shed): gain 0.200000 -> 0.170000, floor -18.000000 -> -20.000000
+    window 1/3: deaths 0, false sheds 1, justified sheds 6
+    window 2/3: deaths 0, false sheds 0, justified sheds 3
+    window 3/3: deaths 0, false sheds 0, justified sheds 4
+
+=== learning OFF: deaths 0 (OOM 0), sheds 18 (justified 13, false 5), learning updates 0, stress events 25
+    window 1/3: deaths 0, false sheds 1, justified sheds 6
+    window 2/3: deaths 0, false sheds 1, justified sheds 3
+    window 3/3: deaths 0, false sheds 3, justified sheds 4
+E13 logs in /home/amun/f/e13_1018_1320
+
+AMUN sequence 2 done 2026-10-18 13:47:34

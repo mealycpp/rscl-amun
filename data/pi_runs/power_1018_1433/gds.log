@@ -1,0 +1,3 @@
+[INFO] Reading command-line configuration from: fprime-gds.yml
+ * Serving Flask app 'fprime_gds.flask.app'
+ * Debug mode: off

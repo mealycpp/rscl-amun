@@ -154,7 +154,7 @@ def fig4():
             a.plot([x, x], [lo, hi], color=c, lw=1.0)
         a.plot(x, lo if nm != "B2, 5 s" else lo, ls="none", marker=m, ms=4.5, color=c, zorder=3)
         if nm == "B2, 5 s":
-            a.plot(x, hi, ls="none", marker=m, ms=4.5, color=c, mfc="white", zorder=3)
+            a.plot(x, hi, ls="none", marker=m, ms=4.5, color=c, zorder=3)
         if nm == "B0":
             a.annotate("", xy=(x, 7.4), xytext=(x, 6.25), arrowprops=dict(arrowstyle="->", color=c, lw=0.8))
         dx, dy, ha = off[nm]
@@ -164,7 +164,7 @@ def fig4():
     a.set_xlim(-0.4, 2e4); a.set_ylim(0, 7.6)
     a.set_xticks([0, 1, 10, 100, 1000, 10000]); a.set_xticklabels(["0", "1", "10", "$10^2$", "$10^3$", "$10^4$"])
     a.set_yticks([1, 2, 3, 4, 5, 6])
-    a.set_xlabel("Evidence NV writes per fault-free hour"); ylab(a, "deaths until loop broken")
+    a.set_xlabel("Evidence file writes per fault-free hour"); ylab(a, "deaths until loop broken")
     a.minorticks_off()
     tag(a, "(a)")
     import numpy as np
